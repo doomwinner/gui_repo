@@ -1,4 +1,4 @@
-# pack_geometry.py
+#pack.py
 
 import tkinter as tk
 from tkinter import *
