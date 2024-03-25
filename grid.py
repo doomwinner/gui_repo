@@ -32,8 +32,9 @@ button_signup.grid(row=3, columnspan=2)
 
 def change_button_font():
     font_family = random.choice(["Arial", "Helvetica", "Times", "Courier", "Comic Sans MS"]) # Random font family
+    font_size = random.randint(5, 10) # Random font size between 10 and 20
     font_weight = random.choice(["normal", "bold"]) # Random font weight
-    button_signup.config(font=(font_family, font_weight))
+    button_signup.config(font=(font_family, font_size, font_weight))
     root.after(500, change_button_font)  # Change font every 500 milliseconds (0.5 seconds)
 
 # Call the function to change font repeatedly
